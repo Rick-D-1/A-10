@@ -1,0 +1,122 @@
+[
+    {
+        "id": "1",
+        "title": "Player Unknowns Battle Ground: PUBG",
+        "coverPhoto": "https://ibb.co.com/dwj5XfCv",
+        "category": "FPS",
+        "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+        "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+        "ratings": "4.5",
+        "developer": "Krafton"
+    },
+    {
+        "id": "2",
+        "title": "Call of Duty Mobile",
+        "coverPhoto": "https://ibb.co.com/dw8Zn1NY",
+        "category": "FPS",
+        "downloadLink": "https://www.callofduty.com/mobile",
+        "description": "COD Mobile brings iconic maps, weapons, and multiplayer modes to mobile with high-speed action.",
+        "ratings": "4.7",
+        "developer": "Activision"
+    },
+    {
+        "id": "3",
+        "title": "Free Fire",
+        "coverPhoto": "https://ibb.co.com/bMM50bBL",
+        "category": "Battle Royale",
+        "downloadLink": "https://ff.garena.com/",
+        "description": "A quick-paced survival shooter where 50 players battle to be the last standing.",
+        "ratings": "4.3",
+        "developer": "Garena"
+    },
+    {
+        "id": "4",
+        "title": "Clash of Clans",
+        "coverPhoto": "https://ibb.co.com/wNVmcTwM",
+        "category": "Strategy",
+        "downloadLink": "https://supercell.com/en/games/clashofclans/",
+        "description": "Build your village, train troops, and battle millions of players worldwide.",
+        "ratings": "4.6",
+        "developer": "Supercell"
+    },
+    {
+        "id": "5",
+        "title": "Clash Royale",
+        "coverPhoto": "https://ibb.co.com/RpW8JPkj",
+        "category": "Strategy",
+        "downloadLink": "https://supercell.com/en/games/clashroyale/",
+        "description": "A real-time multiplayer game with cards, strategy, and exciting battles.",
+        "ratings": "4.4",
+        "developer": "Supercell"
+    },
+    {
+        "id": "6",
+        "title": "Genshin Impact",
+        "coverPhoto": "https://ibb.co.com/gZ4cwSYg",
+        "category": "RPG",
+        "downloadLink": "https://genshin.hoyoverse.com/",
+        "description": "Explore a vast fantasy open world full of elemental magic and adventure.",
+        "ratings": "4.7",
+        "developer": "HoYoverse"
+    },
+    {
+        "id": "7",
+        "title": "Mobile Legends: Bang Bang",
+        "coverPhoto": "https://ibb.co.com/ZR6YPk1d",
+        "category": "MOBA",
+        "downloadLink": "https://mobilelegends.com/",
+        "description": "5v5 MOBA battles with heroes, teamwork, and competitive gameplay.",
+        "ratings": "4.4",
+        "developer": "Moonton"
+    },
+    {
+        "id": "8",
+        "title": "Apex Legends Mobile",
+        "coverPhoto": "https://ibb.co.com/xKtJ88yK",
+        "category": "Battle Royale",
+        "downloadLink": "https://www.ea.com/games/apex-legends",
+        "description": "Team-based battle royale with legends, abilities, and strategy.",
+        "ratings": "4.2",
+        "developer": "EA"
+    },
+    {
+        "id": "9",
+        "title": "Among Us",
+        "coverPhoto": "https://ibb.co.com/7tVGHd0B",
+        "category": "Party",
+        "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+        "description": "A social deduction game where crewmates try to find the impostor.",
+        "ratings": "4.5",
+        "developer": "Innersloth"
+    },
+    {
+        "id": "10",
+        "title": "Minecraft",
+        "coverPhoto": "https://ibb.co.com/bj2m3ppz",
+        "category": "Sandbox",
+        "downloadLink": "https://www.minecraft.net/",
+        "description": "Create, explore, and survive in a blocky open world.",
+        "ratings": "4.6",
+        "developer": "Mojang"
+    },
+    {
+        "id": "11",
+        "title": "Asphalt 9",
+        "coverPhoto": "https://ibb.co.com/TBJDkk66",
+        "category": "Racing",
+        "downloadLink": "https://www.gameloft.com/game/asphalt-9",
+        "description": "High-speed racing with stunning graphics and nitro-filled action.",
+        "ratings": "4.5",
+        "developer": "Gameloft"
+    },
+    {
+        "id": "12",
+        "title": "FIFA Mobile",
+        "coverPhoto": "https://ibb.co.com/ns3F65KZ",
+        "category": "Sports",
+        "downloadLink": "https://www.ea.com/games/fifa/fifa-mobile",
+        "description": "Build a dream football team and compete in realistic matches.",
+        "ratings": "4.1",
+        "developer": "EA Sports"
+    }
+]
