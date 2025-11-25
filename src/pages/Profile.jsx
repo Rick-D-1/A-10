@@ -5,7 +5,7 @@ import auth from '../Firebase/firebase.config';
 
 const Profile = () => {
     const { user, setUser } = useContext(AuthContext)
-    console.log(user);
+
     const [isOpen, setIsOpen] = useState(false)
     const handleOpenForm = () => {
         setIsOpen(!isOpen)
@@ -17,9 +17,7 @@ const Profile = () => {
         updateProfile(auth.currentUser, {
             displayName: name, photoURL: photoUrl,
         }).then(() => {
-
-            setUser(userCredential.user)
-
+            setUser({ ...user, photoURL: photoUrl, displayName: name })
 
         }).catch((error) => {
             console.log(error);
@@ -43,7 +41,7 @@ const Profile = () => {
             <button onClick={handleOpenForm} className="btn mt-3">Update Profile</button>
             {
                 isOpen && (
-                    <form className="fieldset">
+                    <form onSubmit={handleUpdate} className="fieldset">
                         <label className="label">Name</label>
                         <input defaultValue={user?.displayName} name='name' type="text" className="input" placeholder="Your Name" />
                         <label className="label">Photo URL</label>
