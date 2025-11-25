@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Services from "../component/Services";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Profile from "../pages/Profile";
+import PrivetRoute from "./PrivetRoute";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -25,6 +27,9 @@ const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Register></Register>
+            }, {
+                path: "/Profile",
+                element: <PrivetRoute><Profile></Profile></PrivetRoute>
             }
         ]
     },
