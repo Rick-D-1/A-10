@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Gamer from './Gamer';
 
 const PopularSection = () => {
 
@@ -17,7 +18,7 @@ const PopularSection = () => {
     return (
         <div className='mt-8 px-[145px]'>
             <div>
-                <h3 className='text-3xl font-bold text-center'>Popular Game Section</h3>
+                <h3 className='text-3xl font-bold text-center'>Popular <span className='text-orange-500'>Game</span> Section</h3>
             </div>
             <div className=' grid grid-cols-1 lg:grid-cols-3  mt-7 mb-6'>
                 {
@@ -42,7 +43,7 @@ const PopularSection = () => {
 
 
             </div>
-
+            <Gamer></Gamer>
         </div>
 
     );
