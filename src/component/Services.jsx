@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { motion } from "motion/react"
-import Gamer from './Gamer';
+
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -44,7 +44,7 @@ const Services = () => {
 
 
             </div>
-            <Gamer></Gamer>
+
         </div>
 
 
