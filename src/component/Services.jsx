@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('/public/sevices.json')
+        fetch('/sevices.json')
             .then(res => res.json())
             .then(data => setServices(data))
             .catch(err => console.log(err))
