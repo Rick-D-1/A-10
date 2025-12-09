@@ -28,7 +28,7 @@ const NavBar = () => {
                         <li><Link to={'/Profile'}>My Profile</Link></li>
                     </ul>
                 </div>
-                <a className="text-4xl font-bold">Game<span className='text-orange-400'>Hub</span></a>
+                <a className="text-4xl font-bold">Pet<span className='text-orange-400'>Pow</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
