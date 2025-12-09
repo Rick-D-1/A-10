@@ -2,9 +2,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import img1 from '../assets/img1.jpeg';
-import img2 from '../assets/img2.jpeg';
-import img3 from '../assets/img3.jpeg';
+import img1 from '../assets/D&C.jpg';
+import img2 from '../assets/dog.jpg';
+import img3 from '../assets/Cat.jpg';
 import 'swiper/css/navigation';
 
 

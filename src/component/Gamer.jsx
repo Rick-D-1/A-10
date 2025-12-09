@@ -13,7 +13,7 @@ import { Link } from 'react-router';
 const Gamer = () => {
     return (
         <div>
-            <h1 className='text-4xl font-bold text-center'>Popular <span className='text-orange-500'>Gamers</span></h1>
+            <h1 className='text-4xl font-bold text-center'>Popular <span className='text-orange-500'>Doctors</span></h1>
             <div className='mt-5 mb-5'>
                 <Swiper
                     slidesPerView={3}
