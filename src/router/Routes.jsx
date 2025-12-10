@@ -48,11 +48,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/add-services",
-                element: <AddService></AddService>
+                element: <PrivetRoute><AddService></AddService></PrivetRoute>
             },
             {
                 path: "/My-services",
-                element: <MyService></MyService>
+                element: <PrivetRoute><MyService></MyService></PrivetRoute>
             },
             {
                 path: "/Upadte-services/:id",
