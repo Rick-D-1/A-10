@@ -30,7 +30,7 @@ const ServiceDetails = () => {
             <div className='flex justify-center mt-7  mb-5'>
                 <div >
 
-                    <img className='rounded-lg h-[500px] object-cover' src={service.image} alt="" />
+                    <img className='rounded-lg h-[500px] object-cover' src={service.imageUrl} alt="" />
                     <h3 className='text-2xl font-bold te'>{service.name}</h3>
                     <p className='text-xl'>{service.description}</p>
                 </div>

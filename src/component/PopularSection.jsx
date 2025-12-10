@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Gamer from './Gamer';
 import { Link } from 'react-router';
+import axios from 'axios';
 
 const PopularSection = () => {
 
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/services')
-            .then(res => res.json())
-            .then(data => setServices(data))
+        axios.get('http://localhost:3000/services')
+
+            .then(res => setServices(res.data))
             .catch(err => console.log(err))
 
     }, [])
@@ -26,7 +27,7 @@ const PopularSection = () => {
                     services.slice(0, 6).map(service => <div className="card bg-base-100 w-96 shadow-sm mt-8 rounded-lg">
                         <figure>
                             <img className='w-full h-[300px] object-cover'
-                                src={service.image
+                                src={service.imageUrl
                                 }
                                 alt="Shoes" />
                         </figure>
