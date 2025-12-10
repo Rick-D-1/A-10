@@ -26,6 +26,7 @@ const NavBar = () => {
                             <Link to={'/Services'}>Services</Link>
                         </li>
                         <li><Link to={'/Profile'}>My Profile</Link></li>
+                        <li><Link to={'/add-services'}>Add Services</Link></li>
                     </ul>
                 </div>
                 <a className="text-4xl font-bold">Pet<span className='text-orange-400'>Pow</span></a>
@@ -37,6 +38,7 @@ const NavBar = () => {
                         <Link to={'/Services'}>Services</Link>
                     </li>
                     <li><Link to={'/Profile'}>My Profile</Link></li>
+                    <li><Link to={'/add-services'}>Add Services</Link></li>
                 </ul>
             </div>
             {

@@ -3,42 +3,39 @@ import { useParams } from 'react-router';
 
 const ServiceDetails = () => {
 
-    const [services, setServices] = useState([]);
-    const [serviceDetails, setServiceDetails] = useState(null);
+    const [service, setService] = useState([]);
+    const [loading, setLoading] = useState(true);
     const { Myid } = useParams();
 
     useEffect(() => {
-        fetch('/sevices.json')
+        fetch(`http://localhost:3000/services/${Myid}`)
             .then(res => res.json())
             .then(data => {
-                setServices(data);
+                setService(data);
+                setLoading(false);
+
+
             })
             .catch(err => console.log(err));
-    }, []);
+    }, [Myid]);
 
-    useEffect(() => {
-        const findResult = services.find(service => service.id == Myid);
-
-        setServiceDetails(findResult)
-
-        console.log(findResult);
-    }, [Myid, services]);
+    if (loading) {
+        return <p>loading......</p>
+    }
 
     return (
         <div>
 
-            {serviceDetails ? (
-                <div className='flex justify-center mt-7  mb-5'>
-                    <div >
 
-                        <img className='rounded-lg h-[500px] object-cover' src={serviceDetails.coverPhoto} alt="" />
-                        <h3 className='text-2xl font-bold te'>{serviceDetails.title}</h3>
-                        <p className='text-xl'>{serviceDetails.description}</p>
-                    </div>
+            <div className='flex justify-center mt-7  mb-5'>
+                <div >
+
+                    <img className='rounded-lg h-[500px] object-cover' src={service.image} alt="" />
+                    <h3 className='text-2xl font-bold te'>{service.name}</h3>
+                    <p className='text-xl'>{service.description}</p>
                 </div>
-            ) : (
-                <p>Loading...</p>
-            )}
+            </div>
+
         </div>
     );
 };
