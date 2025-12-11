@@ -36,7 +36,7 @@ const NavBar = () => {
                         }
                     </ul>
                 </div>
-                <a className="text-4xl font-bold">Pet<span className='text-orange-400'>Pow</span></a>
+                <a className="text-4xl font-bold">Pet<span className='text-orange-400'>Paw</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -50,6 +50,7 @@ const NavBar = () => {
                                 <li><Link to={'/Profile'}>My Profile</Link></li>
                                 <li><Link to={'/add-services'}>Add Services</Link></li>
                                 <li><Link to={'/My-services'}>My Services</Link></li>
+                                <li><Link to={'/My-Orders'}>My Orders</Link></li>
                             </>
                         )
                     }

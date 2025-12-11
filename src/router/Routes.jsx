@@ -12,6 +12,7 @@ import Error from "../pages/Error";
 import AddService from "../pages/AddService";
 import MyService from "../pages/MyService";
 import UpdateService from "../pages/UpdateService";
+import Myorders from "../pages/Myorders";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             {
                 path: "/Upadte-services/:id",
                 element: <UpdateService></UpdateService>
+            },
+            {
+                path: "/My-Orders",
+                element: <PrivetRoute><Myorders></Myorders></PrivetRoute>
             },
         ]
     },
