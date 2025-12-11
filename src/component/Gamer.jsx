@@ -3,11 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import Game1 from '../assets/gamer1.png';
-import Game2 from '../assets/gamer2.png';
-import Game3 from '../assets/gamer3.jpeg';
-import Game4 from '../assets/gamer4.jpg';
-import Game5 from '../assets/gamer5.jpg';
+import Game1 from '../assets/D1.jpg';
+import Game2 from '../assets/d2.jpeg';
+import Game3 from '../assets/d3.jpg';
+
 import { Link } from 'react-router';
 
 const Gamer = () => {
@@ -27,8 +26,6 @@ const Gamer = () => {
                     <SwiperSlide><img className='rounded-full h-[250px] w-[250px] object-cover' src={Game1} alt="" /></SwiperSlide>
                     <SwiperSlide><img className='rounded-full h-[250px] w-[250px] object-cover' src={Game2} alt="" /></SwiperSlide>
                     <SwiperSlide><img className='rounded-full h-[250px] w-[250px] object-cover' src={Game3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img className='rounded-full h-[250px] w-[250px] object-cover' src={Game4} alt="" /></SwiperSlide>
-                    <SwiperSlide><img className='rounded-full h-[250px] w-[250px] object-cover' src={Game5} alt="" /></SwiperSlide>
 
                 </Swiper>
             </div>
@@ -37,7 +34,7 @@ const Gamer = () => {
                 <div className="card bg-primary text-primary-content w-full">
                     <div className="card-body">
                         <h2 className="card-title text-3xl">Join Now!</h2>
-                        <p>In many online multiplayer games, you can join a friend's party or squad by typing specific commands into the chat box, such as /join [playername] or /invite [name]. The exact command varies by game, and you can usually find a list by typing /help or /allcommands.</p>
+
                         <div className="card-actions justify-end">
                             <label className="input">
                                 <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

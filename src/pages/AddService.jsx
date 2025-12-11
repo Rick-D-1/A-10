@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvieder';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const AddService = () => {
 
@@ -37,6 +38,22 @@ const AddService = () => {
         axios.post('http://localhost:3000/services', formData)
             .then(res => {
                 console.log(res);
+                if (res.data.acknowledged) {
+                    Swal.fire({
+                        title: "Submit!",
+                        icon: "success",
+                        draggable: true
+                    });
+                    form.reset()
+                }
+                else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Something went wrong!",
+
+                    });
+                }
             })
     }
 
