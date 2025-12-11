@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const { user } = useContext(AuthContext)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/services/${Myid}`)
+        fetch(`https://backend-a-10.vercel.app/services/${Myid}`)
             .then(res => res.json())
             .then(data => {
                 setService(data);
@@ -49,7 +49,7 @@ const ServiceDetails = () => {
             note,
             date: new Date()
         }
-        axios.post('http://localhost:3000/orders', formData)
+        axios.post('https://backend-a-10.vercel.app/orders', formData)
             .then(res => {
                 console.log(res);
 

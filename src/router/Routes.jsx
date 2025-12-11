@@ -56,7 +56,7 @@ const router = createBrowserRouter([
                 element: <PrivetRoute><MyService></MyService></PrivetRoute>
             },
             {
-                path: "/Upadte-services/:id",
+                path: "/Update-services/:id",
                 element: <UpdateService></UpdateService>
             },
             {
